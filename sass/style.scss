@@ -9,6 +9,12 @@ $susy: (
   gutters: 1/4,
   container: 71.25rem,
   global-box-sizing: border-box,
+    debug: (
+    image: show,
+    color: blue,
+    output: overlay,
+    toggle: top left,
+  )
 );
 
 // Colors
@@ -39,7 +45,6 @@ $widescreen: 71.25rem; // 1140px
 }
 
 body {
-  padding: 0 .625rem;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -48,14 +53,13 @@ body {
 }
 
 header {
+  @include span(full);
   background-color: $color-primary;
-  height: 4rem;
   margin-bottom: gutter();
-  margin-top: 10px;
   h1 {
     color: #fff;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
   }
 }
 
@@ -115,7 +119,6 @@ ul {  // remove unordered list styling
 footer {
   @include span(full);
   background-color: $color-grey;
-  height: 4rem;
   margin-bottom: 20px;
   h2 {
     color: #fff;
