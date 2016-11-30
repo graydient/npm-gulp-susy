@@ -1,0 +1,71 @@
+@import "normalize";
+@import "susy";
+
+/* Changing Susy default global settings */
+$susy: (
+  columns: 12,
+  container: 1120px,
+  global-box-sizing: border-box 
+  );
+
+/* Makes border-box properties */
+@include border-box-sizing;
+
+@mixin clearfix {
+  &:after {
+    content: ""; 
+    display: table;
+    clear: both; 
+  }
+}
+
+.wrap {
+  @include container(1140px);
+}
+
+.content {
+  @media (min-width: 700px) {
+    @include span(8);    
+  }
+}
+
+.sidebar {
+  @media (min-width: 700px) {
+    @include span(4 last);
+  }
+}
+
+.social {
+  padding: gutter();
+  background: black;
+  @include clearfix;
+  
+  .social__list-item {
+    @include gallery(2 of 10);
+    margin-bottom: gutter(10); 
+    
+    @media (min-width: 700px) {
+      @include gallery(1 of 10);
+      margin-bottom: 0;
+    }
+  }    
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.content,
+.sidebar {
+  background: aquamarine; 
+  text-align: center; 
+  font-size: 28px; 
+  line-height: 10em;
+  height: 10em;
+}
+

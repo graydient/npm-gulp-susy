@@ -1,0 +1,121 @@
+/* Changing Susy default global settings */
+/* Makes border-box properties */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wrap {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+@media (min-width: 700px) {
+  .content {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%; } }
+
+@media (min-width: 700px) {
+  .sidebar {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0; } }
+
+.social {
+  padding: 1.69492%;
+  background: black; }
+  .social:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .social .social__list-item {
+    width: 18.36735%;
+    float: left;
+    margin-bottom: 2.04082%; }
+    .social .social__list-item:nth-child(5n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .social .social__list-item:nth-child(5n + 2) {
+      margin-left: 20.40816%;
+      margin-right: -100%;
+      clear: none; }
+    .social .social__list-item:nth-child(5n + 3) {
+      margin-left: 40.81633%;
+      margin-right: -100%;
+      clear: none; }
+    .social .social__list-item:nth-child(5n + 4) {
+      margin-left: 61.22449%;
+      margin-right: -100%;
+      clear: none; }
+    .social .social__list-item:nth-child(5n + 5) {
+      margin-left: 81.63265%;
+      margin-right: -100%;
+      clear: none; }
+    @media (min-width: 700px) {
+      .social .social__list-item {
+        width: 8.16327%;
+        float: left;
+        margin-bottom: 0; }
+        .social .social__list-item:nth-child(10n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        .social .social__list-item:nth-child(10n + 2) {
+          margin-left: 10.20408%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 3) {
+          margin-left: 20.40816%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 4) {
+          margin-left: 30.61224%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 5) {
+          margin-left: 40.81633%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 6) {
+          margin-left: 51.02041%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 7) {
+          margin-left: 61.22449%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 8) {
+          margin-left: 71.42857%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 9) {
+          margin-left: 81.63265%;
+          margin-right: -100%;
+          clear: none; }
+        .social .social__list-item:nth-child(10n + 10) {
+          margin-left: 91.83673%;
+          margin-right: -100%;
+          clear: none; } }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+.content,
+.sidebar {
+  background: aquamarine;
+  text-align: center;
+  font-size: 28px;
+  line-height: 10em;
+  height: 10em; }

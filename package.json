@@ -1,0 +1,24 @@
+{
+  "name": "susy-demo",
+  "version": "1.0.0",
+  "description": "susy demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "susy"
+  ],
+  "author": "Miles",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "susy": "^2.2.12"
+  },
+  "dependencies": {
+    "normalize-scss": "^6.0.0",
+    "normalize.css": "^5.0.0"
+  }
+}
